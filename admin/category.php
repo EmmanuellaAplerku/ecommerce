@@ -14,7 +14,6 @@ include("../controllers/product_controller.php");
 <body>
 
 <form action="../actions/add_category.php" method="post">
-				<form action="" method="post">
 					<label for=""> Add Category</label>
 					<input type="text" name = 'category' required>
 					<button type="submit" name = 'submit'>Add</button>
