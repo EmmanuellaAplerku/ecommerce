@@ -13,7 +13,7 @@ if (isset($_POST['submit'])){
     if ($inspect)
     {
        echo"Category Added";
-       header('location:../admin/viewcategory.php');
+       header('location:../admin/view_category.php');
         }
     
     else{
