@@ -30,7 +30,7 @@
                 ?>
 
                 <tr>
-                    <td a><?php echo $category['cat_id']?></td>
+                    <!--<td a><?php echo $category['cat_id']?></td>-->
                     <td a><?php echo $category['cat_name']?></td>
                     <td>
                   <!--Creating a form for the category edits-->
