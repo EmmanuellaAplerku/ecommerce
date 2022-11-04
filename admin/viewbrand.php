@@ -52,5 +52,8 @@
                 <?php }?>
             </tbody> 
         </table>
+
+                </br>
+                <a href='admin_index.php'>Back to Homepage</a>
     </body>
 </html>
