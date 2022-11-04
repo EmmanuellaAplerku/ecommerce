@@ -28,7 +28,7 @@ background-image: url('https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_
       <p>Click on the link below to add brands</p>
       <a href="brand.php" class="home-button">Add Brands</a>
       </br>
-      
+      <a href="category.php" class="home-button">Add Categories</a>
 	  
     </div>  
   </section> 
