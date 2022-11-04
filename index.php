@@ -29,6 +29,13 @@
       <a href="Login/register.php" class="home-button">Create an Account</a>
       </br>
       <a href="Login/login.php" class="home-button">I already have an account</a>
+      </br>
+      </br>
+      <p>Admin login details:</p>
+      <p>email: emmanuella.aplerku@gmail.com</p>
+      <p>password: Obps</p>
+
+
 	  
     </div>  
   </section> 
