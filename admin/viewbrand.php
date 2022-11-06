@@ -34,7 +34,7 @@
                     <td a><?php echo $brand['brand_name']?></td>
                     <td>
                   <!--Creating a form for the brand edits-->
-                        <form action="../actions/update_brand.php" method="GET">
+                        <form action="../actions/update_brand.php" method="POST">
                             <input type="hidden" name="brand_id" value='<?php echo $brand['brand_id']?>'>
                             <input type="hidden" name="brand_name" value='<?php echo $brand['brand_name']?>'>
                              <button  type="submit" name="update_brand">Update</button>

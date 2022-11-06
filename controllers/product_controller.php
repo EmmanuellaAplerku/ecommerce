@@ -59,4 +59,27 @@ function update_category_ctr($ctg_id,$category){
     return $updtcat->update_one_category_cls($ctg_id,$category);
 
 }
+
+//Add Product 
+function add_product_ctr($product_cat,$product_brand,$product_title,$product_price,$product_desc,$product_image,$product_key){
+    $addprod = new product_class();
+  
+    return $addprod->add_product_cls($product_cat,$product_brand,$product_title,$product_price,$product_desc,$product_image,$product_key);
+  }
+  
+  function select_one_product_ctr($prod_id){
+    $selectproduct = new product_class(); 
+    return  $selectproduct-> select_one_product_cls($prod_id);
+  }
+  function select_all_products_ctr(){
+    $selectallproducts = new product_class();
+    return $selectallproducts-> select_all_products_cls();
+  }
+
+  
+  function update_product_ctr($prod_id,$brand,$cat,$prtitle,$prprice,$prdesc,$prkey,$folder_path){
+    $updtproduct = new product_class(); 
+   
+    return  $updtproduct->update_product_cls($prod_id,$brand,$cat,$prtitle,$prprice,$prdesc,$prkey,$folder_path);
+  }
 ?>

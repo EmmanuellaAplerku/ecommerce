@@ -34,7 +34,7 @@
                     <td a><?php echo $category['cat_name']?></td>
                     <td>
                   <!--Creating a form for the category edits-->
-                        <form action="../actions/update_category.php" method="GET">
+                        <form action="../actions/update_category.php" method="POST">
                             <input type="hidden" name="cat_id" value='<?php echo $category['cat_id']?>'>
                             <input type="hidden" name="cat_name" value='<?php echo $category['cat_name']?>'>
                              <button  type="submit" name="update_category">Update</button>
