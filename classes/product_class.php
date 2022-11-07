@@ -83,10 +83,10 @@
 
         }
 
-        function update_product_cls($prod_id,$ella_brand,$category,$prod_title,$prod_pri,$prod_desc,$prod_key,$folder_path)
+        function update_product_cls($prod_id,$category,$ella_brand,$prod_title,$prod_pri,$prod_desc,$prod_key,$prodpicture)
         {
         $mysql = "UPDATE `products` SET product_brand = '$ella_brand', product_cat= '$category',product_title= '$prod_title', 
-        product_price= '$prod_pri',product_desc= '$prod_desc',product_key= '$prod_key',product_image= '$folder_path'
+        product_price= '$prod_pri',product_desc= '$prod_desc',product_keywords= '$prod_key',product_image= '$prodpicture'
         WHERE product_id = '$prod_id'";
 
 
