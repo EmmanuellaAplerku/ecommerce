@@ -29,6 +29,7 @@
       <a href="Login/register.php" class="home-button">Create an Account</a>
       </br>
       <a href="Login/login.php" class="home-button">I already have an account</a>
+      <a href="View/product_search_result.php" class="home-button">See Products Available</a>
       </br>
       </br>
       <p>Admin login details:</p>
