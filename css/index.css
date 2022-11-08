@@ -151,8 +151,19 @@
     }
   }
     
-  
-  
+  .edit{
+    display: flex;
+    text-align: center;
+     margin: 0 auto;
+}
+.display{
+    display: flex;
+    text-align: center;
+}
+
+.edit #img1{
+    width: 20%;
+}
   
   
   

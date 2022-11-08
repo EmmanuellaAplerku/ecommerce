@@ -82,4 +82,11 @@ function add_product_ctr($product_cat,$product_brand,$product_title,$product_pri
    
     return  $updtproduct->update_product_cls($prod_id,$cat,$brand,$prtitle,$prprice,$prdesc,$prkey,$prodpicture);
   }
+
+  function search_product($brand){
+    $searchprod = new product_class(); 
+  
+    return $searchprod->search_product_cls($brand);
+  }
+  
 ?>
