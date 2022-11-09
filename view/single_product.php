@@ -36,43 +36,25 @@ $product = select_one_product_ctr($product_id);
 			<a href="#" class="brand-logo">Revamp'D</a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
 				<?php
+					if(check_login()==false){
+						header('location:../index.php');
+					}
 
-				if (check_login() == false) { ?>
-					<li><a href="../Login/login.php">Login</a></li>
-				<?php } elseif ($_SESSION['role'] == 1) {
-
+					else{
+						?>
+						<li><a href="../Login/logout.php" class="home-button">Logout</a></li>
+						<?php
+					}
 				?>
-
-					<li><a href="../Login/logout.php">Logout</a></li>
-
-
-				<?php
-				} else {
-				?>
-					<li><a href="../Login/logout.php">Logout</a></li>
-				<?php  } ?>
 
 			</ul>
 		</div>
 	</nav>
 
 	<div>
-		<?php
-		if (check_login_index() == false) {
-		?>
-
-		<?php
-		} elseif ($_SESSION['role'] == 2) {
-		?>
-
-<?php
-echo "hi";
-?>
-
-			<div>
+				
 				<h1>Products</h1>
-
-
+				
 				<div class="product-content product-wrap clearfix">
 					<div class="row">
 						<div class="col-md-5 col-sm-12 col-xs-12">
@@ -114,17 +96,6 @@ echo "hi";
 						</div>
 					</div>
 				</div>
-				<!-- end product -->
-		   </div>
-			<?php } ?>
-
-
-
-		</div>
-
-	</div>
-
-
 </body>
 
 </html>

@@ -7,7 +7,7 @@ ob_start();
 
 //funtion to check for login
 function check_login(){
-    if(isset($_SESSION['customer_id'])){
+    if(!isset($_SESSION['customer_id'])){
         //header('location:../Login/logout.php');
         return false;
     }

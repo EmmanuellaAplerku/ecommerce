@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 //making the action aware of the controller
 include("../controllers/customer_controller.php");
@@ -20,7 +21,11 @@ if(isset($_POST['login'])){
        $_SESSION['fullname'] = $result['customer_name'];
        $_SESSION['customer_email'] = $result['customer_email'];
        $_SESSION['customer_id'] = $result['customer_id'];
-     $_SESSION['role'] = $result['user_role'];
+        $_SESSION['role'] = $result['user_role'];
+
+        // echo $_SESSION['role'];
+        // echo $_SESSION['customer_id'];
+
 
        if ($_SESSION['role']== 1) header("Location: ../index.php");
         else header("Location: ../admin/admin_index.php");
