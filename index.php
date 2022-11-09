@@ -44,9 +44,9 @@
 			</div>
 </nav>
 
-<section class="section-one"> 
+<!-- <section class="section-one">  -->
 <div class="container">
-      <h1>Welcome to Revamp'd!</h1>
+      <!-- <h1>Welcome to Revamp'd!</h1> -->
       <p>Shopping at your door step</p>
       <!-- <a href="Login/register.php" class="home-button">Create an Account</a>
       </br>
@@ -76,7 +76,7 @@
 
 	  
 </div>  
-  </section> 
+  <!-- </section>  -->
  
  
   
