@@ -30,7 +30,7 @@
       </br>
       <a href="Login/login.php" class="home-button">I already have an account</a>
       </br>
-      <a href="view/product_search_result.php" class="home-button">See Products Available</a>
+      <a href="view/all_product.php" class="home-button">See Products Available</a>
       </br>
       </br>
       <p>Admin login details:</p>
