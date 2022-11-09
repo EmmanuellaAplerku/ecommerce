@@ -21,7 +21,7 @@
   background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcHBpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60');
 	}
 	</style>
- <section class="section-one"> 
+ <!-- <section class="section-one">  -->
     <div class="container">
       <h1>Welcome to Revamp'd!</h1>
       <p>Shopping at your door step</p>
@@ -39,7 +39,7 @@
 
 	  
     </div>  
-  </section> 
+  <!-- </section>  -->
  
  
   
