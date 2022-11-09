@@ -24,8 +24,7 @@
  <section class="section-one"> 
     <div class="container">
       <h1>Welcome to Revamp'd!</h1>
-      <p>Writing services at your door step</p>
-	  <p>Do you want to have a session with us?</p>
+      <p>Shopping at your door step</p>
       <a href="Login/register.php" class="home-button">Create an Account</a>
       </br>
       <a href="Login/login.php" class="home-button">I already have an account</a>
