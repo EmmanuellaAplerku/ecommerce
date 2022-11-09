@@ -1,11 +1,12 @@
 <?php
 	include "../settings/core.php";	
     include ("../controllers/product_controller.php");
-    $brand = $_GET['brd_id'];
-	$custid = $_GET['customer_id'];
-
-    echo $brand;
-
+   
+	if(isset($_POST['searchtitle'])){
+		$term=$_POST['search'];
+		$item=search_product($term);
+	}
+   
 ?>
 
 
@@ -59,51 +60,21 @@
 				</ul>
 			</div>
 		</nav>
-
-        <?php
-          
-            
-            $datafound= search_product($brand);
-         
-
-        ?>
         
-	
+    
+		<form method="POST">
+        <h1>Search</h1>
+		<label>Search:</label><br>
+		<input type="text" name="search">
+		<input type="submit" name="searchtitle">
+		</form>
 
-    <div>
-        <h1>Products</h1>
-                <?php
-                
+                <table>
 
+				</table>
 
-                foreach($datafound as $item){
-
-                    ?>
-                    <div class= 'edit'>
-                          <div>
-                          <!-- <?php echo('Id '); echo($item['product_id']) ?> -->
-                        </div>
-                        <div>
-                           <?php echo('Title: '); echo($item['product_title']) ?>
-                        </div>
-                        
-                      
-                        <img id= "img1"  width="300" height="300" style='border-radius: 8px' src="<?php echo( $item['product_image']); ?>" alt="" srcset="">
-                        <div>
-                           <?php echo('$'); echo($item['product_price']); ?>
-                        </div>      
-						<form action="../actions/add_to_cart.php" method="get">
-							<input type="hidden" name="id"  value=<?php echo($item['product_id'])?>>
-					
-							<input type="hidden" name="custid"  value=<?php echo( $custid)?>>
-							<input type="hidden" name="quant"  value= 1>
-
-						<button type= 'submit' name='submit' >Add to cart</button>
-                    </div>
-
-                    <?php
-                }
-                ?>
+               
+    
 
     </div>
 

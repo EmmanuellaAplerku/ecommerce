@@ -94,10 +94,10 @@
 
         }
 
-        function search_product_cls($brand){
-            $sql = "SELECT * FROM products WHERE product_title LIKE '%$brand%'";
-            $searchresults= $this->db_fetch_all($sql);
-            return $searchresults;
+        function search_product_cls($title){
+            $sql = "SELECT * FROM products WHERE product_title LIKE '%$title%'";
+        return  $this->db_fetch_all($sql);
+            
         }
           
 
