@@ -16,7 +16,7 @@
 <body>
 
 <h1>Add Products </h1>
-<form action="../actions/add_product.php" method="POST">
+<form action="../actions/add_product.php" method="POST" enctype="multipart/form-data">
 
     <label for=""> Choose Category</label>
             <select name= 'category' >
@@ -71,7 +71,7 @@
             <input type="text" name="prod_desc" id="">
             <br>
             <label for=""> Product Image</label>
-            <input type="file" name="prod_image" id="">
+            <input type="file" name="file"  id="">
             <br>
             <label for=""> Product Keywords</label>
             <input type="text" name="prod_key" id="">
