@@ -11,12 +11,23 @@ if(isset($_POST['Updated'])){
    $productimage=$_POST['product_image'];
    $productkey=$_POST['product_keywords'];
 
-   $checkupdate = update_product_ctr($productid,$productcat,$productbrand,$producttitle,$productprice,$productdescrp,$productkey,$productimage);
 
-   if($checkupdate==True){
+
+   echo $productid.'<br>';
+   echo $productcat.'<br>';
+   echo $productbrand.'<br>';
+   echo $producttitle.'<br>';
+   echo $productprice.'<br>';
+   echo $productdescrp.'<br>';
+   echo $productimage.'<br>';
+   echo $productkey.'<br>';
+
+   $checkupdate = update_product_ctr($productid,$productcat,$productbrand,$producttitle,$productprice,$productdescrp,$productimage,$productkey);
+   
+   if($checkupdate){
+      // echo "function check";
     header("location:../admin/viewproduct.php");
    }
-
    else{
     echo "Could not update";
    }

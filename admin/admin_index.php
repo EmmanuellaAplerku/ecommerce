@@ -33,6 +33,9 @@ background-image: url('https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_
       </br>
       <p>Click on the link below to add products</p>
       <a href="product.php" class="home-button">Add Product</a>
+      </br>
+      <a href="../Login/logout.php" class="home-button">Logout</a>
+
 	  
     </div>  
   </section> 

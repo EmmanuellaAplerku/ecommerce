@@ -74,7 +74,7 @@ require ('../controllers/product_controller.php');
             <input  type="text" value= "<?php echo $product['product_keywords']?> "placeholder="Update" id="prodkwd"name="product_keywords">
             <label for="prodkwd">Keywords</label><br>
             </br>
-            <button id="upd_prod" name="Updated"> Update Product</button>   
+            <button type="submit" id="upd_prod" name="Updated"> Update Product</button>   
     </form>
 </body>
 </html>

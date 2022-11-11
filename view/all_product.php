@@ -70,7 +70,7 @@ require '../controllers/product_controller.php';
 								<div class="product-info smart-form">
 									<div class="row">
 										<div class="col-md-6 col-sm-6 col-xs-6">
-											<a href="../actions/add_to_cart.php" class="btn btn-success">Add to cart</a>
+											<a href="../actions/add_to_cart.php?product_id=<?php echo $item['product_id']?>" class='btn btn-success'>Add to cart</a>
 											<?php 
 											echo "
 											<a href='../view/single_product.php?product_id={$item['product_id']}' class='btn btn-success'>View product</a>

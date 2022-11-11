@@ -77,10 +77,9 @@ function add_product_ctr($product_cat,$product_brand,$product_title,$product_pri
   }
 
   
-  function update_product_ctr($prod_id,$cat,$brand,$prtitle,$prprice,$prdesc,$prkey,$prodpicture){
+  function update_product_ctr($prod_id,$category,$ella_brand,$prod_title,$prod_pri,$prod_desc,$prodpicture,$prod_key){
     $updtproduct = new product_class(); 
-   
-    return  $updtproduct->update_product_cls($prod_id,$cat,$brand,$prtitle,$prprice,$prdesc,$prkey,$prodpicture);
+    return  $updtproduct->update_product_cls($prod_id,$category,$ella_brand,$prod_title,$prod_pri,$prod_desc,$prodpicture,$prod_key);
   }
 
   function search_product($title){

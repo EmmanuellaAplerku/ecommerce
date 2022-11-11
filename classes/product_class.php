@@ -83,11 +83,11 @@
 
         }
 
-        function update_product_cls($prod_id,$category,$ella_brand,$prod_title,$prod_pri,$prod_desc,$prod_key,$prodpicture)
+        function update_product_cls($prod_id,$category,$ella_brand,$prod_title,$prod_pri,$prod_desc,$prodpicture,$prod_key)
         {
-        $mysql = "UPDATE `products` SET product_brand = '$ella_brand', product_cat= '$category',product_title= '$prod_title', 
-        product_price= '$prod_pri',product_desc= '$prod_desc',product_keywords= '$prod_key',product_image= '$prodpicture'
-        WHERE product_id = '$prod_id'";
+        $mysql = "UPDATE `products` SET product_cat='$category', product_brand ='$ella_brand', product_title='$prod_title', 
+        product_price='$prod_pri', product_desc='$prod_desc', product_image='$prodpicture', product_keywords='$prod_key'
+        WHERE product_id='$prod_id'";
 
 
         return $this->db_query($mysql);
