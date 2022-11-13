@@ -16,7 +16,8 @@ if(isset($_SESSION['customer_id'])){
             // update the item with the new quantity
             $result = update_quant_ctr($product_id, $newQty, $cid);
             if($result){
-                echo "quantity updated: `{$newQty}`";
+                // echo "quantity updated: `{$newQty}`";
+                header("Location:../view/cart.php");
             }else{
                 echo "failed to update";
             }
