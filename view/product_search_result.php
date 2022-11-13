@@ -41,6 +41,9 @@
 
 					else{
 						?>
+						<li><a href="../index.php" class="home-button">Home</a></li>
+						<li><a href="cart.php" class="home-button">View Cart</a></li>
+						<li><a href="product_search_result.php" class="home-button">Search</a></li>
 						<li><a href="../Login/logout.php" class="home-button">Logout</a></li>
 						<?php
 
@@ -126,7 +129,7 @@
         <h1>Search</h1>
 		<label>Search:</label><br>
 		<input type="text" name="search">
-		<input type="submit" name="searchtitle">
+		<input type="submit" name="searchtitle" value="Find product">
 		</form>
 
                 <table>

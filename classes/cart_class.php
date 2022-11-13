@@ -16,10 +16,34 @@ class cart_class  extends db_connection{
 
     function select_all_cart_cls($cid){
         // $sql = "SELECT * FROM `products`";
-        $sql = "SELECT products.product_title, products.product_price, products.product_desc, products.product_image, cart.qty FROM products left join cart on products.product_id = cart.p_id WHERE cart.c_id=$cid";
+        $sql = "SELECT products.product_id, products.product_title, products.product_price, products.product_desc, products.product_image, cart.qty FROM products left join cart on products.product_id = cart.p_id WHERE cart.c_id=$cid";
         return $this->db_fetch_all($sql);
 
 
     }
+    function select_one_cart_cls($prod_id, $cid)
+    {
+        $mysql = "SELECT * FROM `cart` WHERE p_id = '$prod_id' AND c_id='$cid'";
+        return $this->db_fetch_all($mysql);
+
+    }
+//Remove from cart when customer is logged in
+    function remove_from_cart_cls($pid,$cid){
+        $sql = "DELETE FROM `cart` WHERE p_id = '$pid' AND c_id = '$cid'";
+        return $this->db_query($sql);
+
+    }
+//Remove from cart when customer is not logged in
+    function not_logged_remove_from_cart_cls($pid,$ipadd){
+        $sql = "DELETE FROM `cart` WHERE p_id = '$pid' AND ip_add = '$ipadd'";
+        return $this->db_query($sql);
+    }
+//Update product quantity in cart
+    function update_quant_cls($pid, $newquant, $cid){
+        $sql = "UPDATE `cart` SET qty = '$newquant' WHERE p_id='$pid' AND c_id='$cid'";
+        return $this->db_query($sql);
+
+    }
+
 }
 ?>
