@@ -25,7 +25,49 @@ if(isset($_SESSION['customer_id'])){
     }
 }
 
-if(isset($_GET['decrease_id'])){
-    echo "decreased";
+//Decrease quantity
+if(isset($_SESSION['customer_id'])){
+    $cid = $_SESSION['customer_id'];
+   
+    if(isset($_GET['decrease_id'])){
+        $prod_id = $_GET['decrease_id'];
+        //select item
+        $get_prod = select_one_cart_ctr($prod_id, $cid);
+        // print_r($get_prod);
+
+        foreach($get_prod as $item){
+            if ($item['qty']<=1){
+                $fixedquant = 1;
+                $result = update_quant_ctr($prod_id, $fixedquant, $cid);
+                // $oldqty = $item['qty'];
+                // $newqty = $oldqty-1;
+                if($result){
+                    // echo "quantity updated: `{$newqty}`";
+                    header("Location:../view/cart.php");
+                }else{
+                    echo "failed to update";
+                }
+            }
+            else{
+                $oldqty = $item['qty'];
+                $newqty = $oldqty-1;
+                $result = update_quant_ctr($prod_id, $newqty, $cid);
+
+                if($result){
+                    // echo "quantity updated: `{$newqty}`";
+                    header("Location:../view/cart.php");
+                }else{
+                    echo "failed to update";
+                }
+
+            }
+        
+    
+
+        }
+
+    }
 }
+
+
 ?>
