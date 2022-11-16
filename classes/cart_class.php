@@ -45,5 +45,12 @@ class cart_class  extends db_connection{
 
     }
 
+//Sum of items in the cart when customer is logged in
+function sum_all_cart_cls($cid){
+    return $this->db_fetch_one("SELECT sum(products.product_price * cart.qty) as total from `cart` join `products` on (products.product_id = cart.p_id) where cart.c_id = '$cid'");
+
+}
+
+
 }
 ?>

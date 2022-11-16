@@ -1,6 +1,8 @@
 <?php
 include('../settings/core.php');
 require('../controllers/cart_controller.php');
+
+$uid = $_SESSION['customer_id'];
 ?>
 
 
@@ -48,7 +50,7 @@ require('../controllers/cart_controller.php');
             <!-- product -->
 
             <?php
-            $selectedproduct = select_all_cart_ctr($_SESSION['customer_id']);
+            $selectedproduct = select_all_cart_ctr($uid);
             // print_r($selectedproduct);
             foreach ($selectedproduct as $item) { ?>
 
@@ -108,7 +110,7 @@ require('../controllers/cart_controller.php');
         <?php } ?>
 
     </div>
-    <a href="../actions/process_payment.php" class='btn btn-success float-right block'>Proceed</a>
+    <a href="payment.php?uid=<?php echo $uid ?>" class='btn btn-danger' style="float: right;">Proceed</a>
 
 </body>
 

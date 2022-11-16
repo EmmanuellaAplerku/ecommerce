@@ -33,5 +33,8 @@ function update_quant_ctr($pid, $newquant, $cid){
     return $update_quant->update_quant_cls($pid, $newquant, $cid);
 }
 
-    
+function sum_all_cart_ctr($cid){
+    $calc_total = new cart_class();
+    return $calc_total->sum_all_cart_cls($cid);
+}
 ?>
