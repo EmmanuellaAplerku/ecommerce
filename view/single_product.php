@@ -92,7 +92,7 @@ $product = select_one_product_ctr($product_id);
 							<div class="product-info smart-form">
 								<div class="row">
 									<div class="col-md-6 col-sm-6 col-xs-6">
-									<a href="../actions/add_to_cart.php?product_id=<?php echo $item['product_id']?>" class='btn btn-success'>Add to cart</a>
+									<a href="../actions/add_to_cart.php?product_id=<?php echo $product['product_id']?>" class='btn btn-success'>Add to cart</a>
 									</div>
 								</div>
 							</div>
