@@ -1,6 +1,8 @@
 <?php
 include('../settings/core.php');
 require('../controllers/cart_controller.php');
+
+$uid = $_SESSION['customer_id'];
 ?>
 
 
@@ -48,7 +50,7 @@ require('../controllers/cart_controller.php');
             <!-- product -->
 
             <?php
-            $selectedproduct = select_all_cart_ctr($_SESSION['customer_id']);
+            $selectedproduct = select_all_cart_ctr($uid);
             // print_r($selectedproduct);
             foreach ($selectedproduct as $item) { ?>
 
@@ -93,7 +95,7 @@ require('../controllers/cart_controller.php');
                             <div class="product-info smart-form">
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6 col-xs-6">
-                                        <a href="../actions/add_to_cart.php?product_id=<?php echo $item['product_id'] ?>" class='btn btn-success'>Checkout</a>
+                                        <!-- <a href="../actions/add_to_cart.php?product_id=<?php echo $item['product_id'] ?>" class='btn btn-success'>Checkout</a> -->
 
                                         <a href="../actions/remove_from_cart.php?product_id=<?php echo $item['product_id'] ?>" class='btn btn-success'>Remove</a>
 
@@ -108,6 +110,7 @@ require('../controllers/cart_controller.php');
         <?php } ?>
 
     </div>
+    <a href="payment.php?uid=<?php echo $uid ?>" class='btn btn-danger' style="float: right;">Proceed</a>
 
 </body>
 

@@ -27,8 +27,15 @@ if(isset($_POST['login'])){
         // echo $_SESSION['customer_id'];
 
 
-       if ($_SESSION['role']== 1) header("Location: ../index.php");
-        else header("Location: ../admin/admin_index.php");
+       if ($_SESSION['role']== 1) {
+        header("Location: ../index.php");
+    
+       }
+
+       else {
+        header("Location: ../admin/admin_index.php");
+        }
+       
 
     }
 
