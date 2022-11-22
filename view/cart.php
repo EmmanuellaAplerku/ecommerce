@@ -110,7 +110,7 @@ $uid = $_SESSION['customer_id'];
         <?php } ?>
 
     </div>
-    <a href="payment.php?uid=<?php echo $uid ?>" class='btn btn-danger' style="float: right;">Proceed</a>
+    <a href="payment_summary.php?uid=<?php echo $uid ?>" class='btn btn-danger' style="float: right;">Proceed</a>
 
 </body>
 

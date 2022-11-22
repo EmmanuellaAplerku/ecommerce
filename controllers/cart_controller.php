@@ -37,4 +37,11 @@ function sum_all_cart_ctr($cid){
     $calc_total = new cart_class();
     return $calc_total->sum_all_cart_cls($cid);
 }
+
+function email_ctr($cid){
+    $calc_total = new cart_class();
+    return $calc_total->email_cls($cid);
+}
+
+
 ?>

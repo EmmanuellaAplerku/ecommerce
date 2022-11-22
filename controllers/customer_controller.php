@@ -19,3 +19,11 @@ function select_one_customer_ctr($email){
     return $selectcustomer->select_one_customer_class($email);
 
 }
+
+
+function select_one_email_ctr($id){
+    $selectcustomer = new CustomerClass();
+
+    return $selectcustomer->select_one_email_class($id);
+
+}

@@ -22,4 +22,10 @@ class CustomerClass extends db_connection
 		return $this->db_fetch_one($sql);
     
     }
+
+    function select_one_email_class($id){
+      $sql= "SELECT `customer_email` FROM `customer` WHERE `customer_id` = '$id'";
+      return $this->db_fetch_one($sql);
+      }
+  
 }

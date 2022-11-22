@@ -51,6 +51,11 @@ function sum_all_cart_cls($cid){
 
 }
 
+function email_cls($c_id){
+    $sql = "SELECT customer.customer_email from cart inner join customer on cart.c_id=customer.customer_id where c_id=$c_id limit 1";
+   return $this-> db_fetch_one($sql);
+}
+
 
 }
 ?>
