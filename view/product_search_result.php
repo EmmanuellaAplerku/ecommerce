@@ -41,7 +41,7 @@
 
 					else{
 						?>
-						<li><a href="all_product.php" class="home-button">See Products</a></li>
+						
 						<li><a href="cart.php" class="home-button">View Cart</a></li>
 						
 						<li><a href="../Login/logout.php" class="home-button">Logout</a></li>
