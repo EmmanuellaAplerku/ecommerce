@@ -29,14 +29,14 @@
 			<div class="nav-wrapper">
 				<a href="#" class="brand-logo">Revamp'D</a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="./view/all_product.php">All Products</a></li>
+					<!-- <li><a href="./view/all_product.php">All Products</a></li> -->
           <li><a href="./Login/login.php">Login</a></li> 
 				
-						<li>
+						<!-- <li>
 						<form action="../actions/product_functions.php" method= 'get'>
 							<input type="search" name="search" id="search" style="width:100px">
 							<button name= "submit">search</button>
-						</form>
+						</form> -->
             <li><a href="./Login/register.php">SignUp</a></li> 
 						</li>
 					
