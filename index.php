@@ -48,22 +48,14 @@
 <div class="container">
       <!-- <h1>Welcome to Revamp'd!</h1> -->
       <p>Shopping at your door step</p>
-      <!-- <a href="Login/register.php" class="home-button">Create an Account</a>
-      </br>
-      <a href="Login/login.php" class="home-button">I already have an account</a>
-      </br>
-      <a href="view/all_product.php" class="home-button">See Products Available</a> -->
-      </br>
-      </br>
-      </br>
-      </br>
-      </br>
-      </br>
-      </br>
-      </br>
      
-
-
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+    
       <p>Admin login details:</p>
       <p>email: emmanuella.aplerku@gmail.com</p>
       <p>password: Obps</p>
