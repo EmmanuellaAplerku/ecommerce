@@ -42,7 +42,7 @@ $product = select_one_product_ctr($product_id);
 
 					else{
 						?>
-						<li><a href="../index.php" class="home-button">Home</a></li>
+						<li><a href="../view/all_product.php" class="home-button">All products</a></li>
 						<li><a href="../view/cart.php" class="home-button">View Cart</a></li>
 						<li><a href="../view/product_search_result.php" class="home-button">Search</a></li>
 						<li><a href="../Login/logout.php" class="home-button">Logout</a></li>
