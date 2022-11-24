@@ -29,6 +29,26 @@
     // echo $user_id;
 ?>
 
+  <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Revamp'D</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <?php
+                if (check_login() == false) {
+                    header('location:../index.php');
+                } else {
+                ?>
+                    
+                    <li><a href="../view/all_product.php" class="home-button">See Products</a></li>
+                    <li><a href="../Login/logout.php" class="home-button">Logout</a></li>
+                <?php
+                }
+                ?>
+
+            </ul>
+        </div>
+    </nav>
+
 
 <!-- BOOTSTRAP TEMPLATE -->
 <section class="vh-100" style="background-color: #eee;">
