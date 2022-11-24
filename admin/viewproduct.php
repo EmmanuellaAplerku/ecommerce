@@ -50,9 +50,9 @@
                     </td>
 
                     <td>
-                        <form action="../actions/delete_brand.php" method="POST">
+                        <form action="../actions/delete_product.php" method="POST">
                             <input type="hidden" name="product_id" value='<?php echo $product['product_id']?>'>
-                            <button  type="submit" name="delete_brand">Delete</button>
+                            <button  type="submit" name="delete_prod">Delete</button>
                         </form>
                      </td>
                 </tr>

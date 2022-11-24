@@ -86,12 +86,12 @@ $selectedproduct = select_all_cart_ctr($user_id);
                 <div>
                 <strong>Total Amount</strong>
                 </div>
-                <span><strong>$sub</strong></span>
+                <span><strong> GHS $sub</strong></span>
                 </li>";
             ?>
 
             <div class= card-footer>
-          <a href="../view/paymentform.php"  type="button"class="btn btn-success btn-lg btn-block">checkout </a>
+          <a href="../view/paymentform.php?amount=<?php echo $sub?>"  type="button"class="btn btn-success btn-lg btn-block">checkout </a>
             </div>
 
           </div>

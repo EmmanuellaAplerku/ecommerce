@@ -78,7 +78,7 @@ $product = select_one_product_ctr($product_id);
 								</h5>
 								<div>
 									<?php
-									echo '$';
+									echo 'GHS';
 									echo $product['product_price'];
 									?>
 								</div>

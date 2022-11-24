@@ -28,7 +28,7 @@ if (isset($_POST['submitproduct'])) {
     // checking the type of file
     if (in_array($fileActualExt, $permit)) {
         if ($fileError === 0) {
-            if ($fileSize < 500000) {
+            if ($fileSize < 5000000000) {
                 $fileNameNew = uniqid('', true) . '.' . $fileActualExt;
                 $fileDestination = '../images/' . $fileNameNew;
                 $move = move_uploaded_file($fileTmpName, $fileDestination);

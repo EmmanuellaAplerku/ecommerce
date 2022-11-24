@@ -78,7 +78,7 @@ require '../controllers/product_controller.php';
 									</h5>
 									<div>
 										<?php
-										echo '$';
+										echo 'GHS';
 										echo $item['product_price'];
 										?>
 									</div>

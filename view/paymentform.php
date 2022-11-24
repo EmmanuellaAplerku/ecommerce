@@ -19,9 +19,9 @@
 
 <?php
     require('../controllers/customer_controller.php');
-    $user_id = $_GET['uid'];
+    $user_id = $_SESSION['customer_id'];
     $sub=$_SESSION['amount'];
-    echo $sub;
+    echo $user_id;
 
     // $amount= $_GET($sub);
     // $result = select_one_customer_ctr($email);
@@ -53,7 +53,7 @@
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input type="tel" id="amount" name="amount" value="<?php echo $sub;?>" class="form-control" required/>
+                      <input type="tel" id="amount" name="amount" value="<?php echo $_GET['amount'];?>" class="form-control" required/>
                       <label class="form-label" for="form3Example4c">Amount</label>
                     </div>
                   </div>

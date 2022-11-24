@@ -99,6 +99,13 @@
         return  $this->db_fetch_all($sql);
             
         }
+
+        function delete_product_cls($prod_id){
+            $sql = "DELETE FROM `products` WHERE product_id = '$prod_id'";
+            return $this->db_query($sql);
+
+
+        }
           
 
     }

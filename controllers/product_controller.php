@@ -87,5 +87,11 @@ function add_product_ctr($product_cat,$product_brand,$product_title,$product_pri
   
     return $searchprod->search_product_cls($title);
   }
+
+  function delete_product_ctr($prod_id){
+    $deleteprod = new product_class();
+    return $deleteprod->delete_product_cls($prod_id);
+
+  }
   
 ?>
