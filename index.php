@@ -73,6 +73,10 @@
       <p>email: emmanuella.aplerku@gmail.com</p>
       <p>password: Obps</p>
 
+      <p>User login details:</p>
+      <p>email: awuraafram@gmail.com</p>
+      <p>password: Afram1</p>
+
 
 	  
 </div>  

@@ -28,7 +28,7 @@ if(isset($_POST['login'])){
 
 
        if ($_SESSION['role']== 1) {
-        header("Location: ../index.php");
+        header("Location: ../view/all_product.php");
     
        }
 
