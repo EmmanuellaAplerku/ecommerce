@@ -33,7 +33,7 @@ $uid = $_SESSION['customer_id'];
                     header('location:../index.php');
                 } else {
                 ?>
-                    <li><a href="../index.php" class="home-button">Home</a></li>
+            
                     <li><a href="../view/all_product.php" class="home-button">See Products</a></li>
                     <li><a href="../Login/logout.php" class="home-button">Logout</a></li>
                 <?php
